@@ -7,7 +7,7 @@ type ResultProps = {
 
 const Result = ({outcome, country}: ResultProps) => {
     return (
-        <div className={`${outcome} p-6 text-center rounded-2xl border-2 m-8 text-black`}>
+        <div data-testid= "result" className={`${outcome} p-6 text-center rounded-2xl border-2  text-black`}>
             {outcome === "right" ?
             <>
             <h3>Congratulations!!</h3>
